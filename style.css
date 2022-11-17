@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*{
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+.container3{
+	position: relative;
+}
+
+.container3 .slide-container3 .slide3{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding: 20px 9%;
+	padding-bottom: 70px;
+}
+
+.container3 .slide-container3 .slide3 .content3{
+	flex: 1 1 350px;
+	animation: slideContent .4s linear .6s backwards;
+}
+
+@keyframes slideContent{
+	0%{
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+}
+
+.container3 .slide-container3 .slide3 .image3{
+	flex: 1 1 350px;
+	animation: slideImage .4s linear;
+}
+
+@keyframes slideImage{
+	0%{
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+}
+
+.container3 .slide-container3 .slide3 .image3 img{
+	width: 100%;
+}
+
+.container3 .slide-container3 .slide3 .content3 h3{
+	font-size: 35px;
+	color: #ffffff;
+}
+
+.container3 .slide-container3 .slide3 .content3 p{
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 0;
+}
+
+.container3 .slide-container3{
+	display: none;
+}
+
+.mini1{
+	display: flex;
+	justify-content: space-around;
+    align-items: center;
+	
+}
+
+.container3 .slide-container3 .content3 .mini1 .mini_1 a{
+	font-size: 15px;
+	color: #fff;
+
+}
+.container3 .slide-container3 .content3 .mini1 .mini_2 a{
+	font-size: 15px;
+    color: #fff;
+}
+
+.container3 .slide-container3.active3{
+	display: block;
+}
+
+.container3 .slide-container3:nth-child(1) .slide3{
+	background: linear-gradient(90deg,#181716 70%, #48bdf3 30.1%);
+	height: 100hv;
+	align-items: center;
+}
+
+.container3 .slide-container3:nth-child(2) .slide3{
+	background: linear-gradient(90deg,#181716 70%, #fff 30.1%);
+}
+
+.container3 .slide-container3:nth-child(3) .slide3{
+	background: linear-gradient(90deg,#181716 70%, #f17a42 30.1%);
+}
+
+
+.container3 #prev3,
+.container3 #next3{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #333;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bolder;
+}
+
+.container3 #prev3::hover,
+.container3 #next3::hover{
+	background: #666;
+}
+
+.container3 #prev3{
+	left:20px;
+}
+
+.container3 #next3{
+	right: 20px;
+}
+
+
+
+
